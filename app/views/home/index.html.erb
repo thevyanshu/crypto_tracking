@@ -1,0 +1,13 @@
+<div class="dynamic"><%= render :partial => 'table' %></div>
+
+
+<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(
+  function() {
+  setInterval(function() {
+            $('.dynamic').load('/home/index');
+        }, 3000);
+    });
+</script>

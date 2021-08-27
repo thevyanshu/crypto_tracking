@@ -1,0 +1,30 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>label</th>
+      <th>name</th>
+      <th>last</th>
+      <th>low</th>
+      <th>high</th>
+      <th>buy</th>
+      <th>sell</th>
+      <th>volume</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% @coins.each do |coin| %>
+      <tr>
+        <td><%= coin[:label] %></td>
+        <td><%= coin[:name] %></td>
+        <td><%= coin[:last] %></td>
+        <td><%= coin[:low] %></td>
+        <td><%= coin[:high] %></td>
+        <td><%= coin[:buy] %></td>
+        <td><%= coin[:sell] %></td>
+        <td><%= coin[:volume] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
